@@ -1,6 +1,7 @@
 * {
   margin: 0 auto;
   padding: 0 auto;
+  font-family: "PT Serif", serif;
 }
 .navigation {
   width: 100%;
@@ -11,18 +12,36 @@
 }
 ul.blalist {
   display: flex;
-  width: 400px;
+  width: 300px;
   list-style: none;
   text-decoration: none;
   padding-top: 5px;
   text-align: center;
   font-size: 25px;
   font-variant-caps: all-petite-caps;
-  justify-content: space-evenly;
+  justify-content: space-between;
   cursor: pointer;
 }
-ul.blalist:hover {
-  font-size: 27px;
+.searchbar {
+  border-radius: 3px;
+  border: 1px;
+  margin-top: 16px;
+}
+
+.phonenamesli {
+  font-size: 25px;
+  list-style: none;
+
+  padding-top: 20px;
+  width: 130px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+  font-variant-caps: all-petite-caps;
+}
+.phonenamesli:hover {
+  color: red;
+  cursor: pointer;
 }
 
 .footer {
