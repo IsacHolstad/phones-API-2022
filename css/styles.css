@@ -23,15 +23,21 @@ ul.blalist {
   cursor: pointer;
 }
 .searchbar {
-  border-radius: 3px;
-  border: 1px;
-  margin-top: 16px;
+  border-radius: 10px;
+  border: 1.5px solid gray;
+  height: 35px;
+  text-align: center;
+  width: 350px;
+  margin-top: 10px;
 }
-
+.searchbar:hover {
+  border: 1.6px solid blue;
+}
 .phonenamesli {
+  position: relative;
+  top: 50px;
   font-size: 25px;
   list-style: none;
-
   padding-top: 20px;
   width: 130px;
   margin-left: 35px;
