@@ -9,15 +9,22 @@
   display: flex;
   border-bottom: 1px solid gray;
 }
-.profilicon {
-  margin-top: 5px;
-  display: inline;
-  height: 35px;
-  flex-direction: column;
-  position: absolute;
-  padding-left: 150px;
+ul.blalist {
+  display: flex;
+  width: 400px;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 25px;
+  font-variant-caps: all-petite-caps;
+  justify-content: space-evenly;
   cursor: pointer;
 }
+ul.blalist:hover {
+  font-size: 27px;
+}
+
 .footer {
   position: absolute;
   padding-bottom: 0 auto;
