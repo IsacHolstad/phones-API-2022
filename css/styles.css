@@ -12,14 +12,14 @@
 }
 ul.blalist {
   display: flex;
-  width: 300px;
+  width: 260px;
+  margin-left: 100px;
   list-style: none;
   text-decoration: none;
   padding-top: 5px;
   text-align: center;
   font-size: 25px;
   font-variant-caps: all-petite-caps;
-  justify-content: space-between;
   cursor: pointer;
 }
 .searchbar {
@@ -47,7 +47,7 @@ ul.blalist {
   font-variant-caps: all-petite-caps;
 }
 .phonenamesli:hover {
-  color: red;
+  color: blue;
   cursor: pointer;
 }
 .footer li {
@@ -65,6 +65,7 @@ ul.blalist {
 }
 
 .footer {
+  text-align: left;
   position: absolute;
   padding-bottom: 0 auto;
   margin-bottom: 0 auto;
