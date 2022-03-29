@@ -118,86 +118,55 @@ ul.blalist {
 }
 
 /*THIS IS FOR SMALL DEVICES LIKE PHONESS TO TABLETS*/
-/*
+
 @media screen and (min-width: 320px) and (max-width: 720px) {
   .searchbar {
     border-radius: 10px;
-    border: 1.5px solid gray;
+    border: 1.4px solid gray;
     height: 32px;
     text-align: left;
     font-size: 15px;
     width: 300px;
     margin-top: 10px;
   }
-  .searchbar:hover {
-    border: 1.6px solid blue;
-  }
-  .navigation {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(23, 141, 102);
-    display: flex;
-    border-bottom: 1px solid gray;
-  }
-  ul.blalist {
-    display: flex;
-    width: 260px;
-    margin-left: 100px;
-    list-style: none;
-    text-decoration: none;
-    padding-top: 5px;
-    text-align: center;
-    font-size: 16px;
-    font-variant-caps: all-petite-caps;
-    cursor: pointer;
-  }
-  .phonenamesli {
-    top: 50px;
-    text-decoration: none;
-    font-size: 25px;
-    list-style: none;
-    padding-top: 20px;
-    width: 160px;
-    margin-left: 35px;
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    font-variant-caps: all-petite-caps;
-  }
   .footer li {
     font-size: 25px;
     list-style: none;
     margin: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    border-bottom: 0;
+
     cursor: pointer;
     font-variant-caps: all-petite-caps;
+
+    margin-top: 10px;
+  }
+
+  .footer {
+    text-align: center;
+    position: absolute;
+    padding-bottom: 0 auto;
+    margin-bottom: 0 auto;
+    top: 3500px;
+    height: 230px;
     width: 100%;
+    border-top: 1.5px solid gray;
+    background-color: rgb(23, 141, 102);
   }
 
   .alinkabout {
     text-decoration: none;
     color: black;
   }
-  .alinkabout:hover {
-    color: blue;
-    font-size: 26px;
-    font-weight: bolder;
+  .twitterlogo {
+    display: none;
   }
-
-  .footer {
-    text-align: left;
-    position: absolute;
-    padding-bottom: 0 auto;
-    margin-bottom: 0 auto;
-    top: 3100px;
-    height: 180px;
-    width: 100%;
-    border-top: 1.5px solid gray;
-    background-color: rgb(23, 141, 102);
+  .discordlogo {
+    display: none;
+  }
+  .githublogo {
+    display: none;
   }
 }
-*/
 
 /*THIS IS FOR SMALL LAPTOPTS TO HIGHT RESELUTION PC SCREENS*/
 /*

@@ -15,11 +15,11 @@ async function detailContainer() {
         console.log(phoneS)
         for (let i = 0; i < phoneS.length; i++) {
             console.log(phoneS[i].phones)
-            if(i === 100) {
+            if(i === 50) {
                 break
             }
             
-            phoneContainer.innerHTML += `<li class="detailslistHT">${phoneS[i].brand_slug}</li>`
+            phoneContainer.innerHTML += `<li class="detailslistHT">${phoneS[i].brand_slug} ${phoneS[i].brand_name}</li>`
         }
 
     }catch(error) {
