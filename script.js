@@ -12,7 +12,7 @@ async function phoneNames() {
         console.log(responseJSON);
         const phoneData = responseJSON.data;
         for (let i = 0; i < phoneData.length; i++) {
-            console.log(phoneData[i].brand_name)
+            //console.log(phoneData[i].brand_name)
             if (i === 55) {
                 break
             }
@@ -28,3 +28,6 @@ phoneNames()
 
 
 //add filter by search to searchbox in navigation top header
+const searchBar = document.querySelector(".searchbar");
+console.log(searchBar);
+

@@ -36,6 +36,7 @@ ul.blalist {
   font-variant-caps: all-petite-caps;
   cursor: pointer;
 }
+
 .searchbar {
   border-radius: 10px;
   border: 1.4px solid gray;
