@@ -36,18 +36,7 @@ ul.blalist {
   font-variant-caps: all-petite-caps;
   cursor: pointer;
 }
-.searchbar {
-  border-radius: 10px;
-  border: 1.5px solid gray;
-  height: 32px;
-  text-align: left;
-  font-size: 15px;
-  width: 500px;
-  margin-top: 10px;
-}
-.searchbar:hover {
-  border: 1.6px solid blue;
-}
+
 .phonenamesli {
   top: 50px;
   text-decoration: none;
