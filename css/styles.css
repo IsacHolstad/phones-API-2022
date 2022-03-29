@@ -42,7 +42,7 @@ ul.blalist {
   height: 32px;
   text-align: left;
   font-size: 15px;
-  width: 850px;
+  width: 800px;
   margin-top: 10px;
 }
 .searchbar:hover {
@@ -64,6 +64,7 @@ ul.blalist {
 .phonenamesli:hover {
   color: blue;
   cursor: pointer;
+  border-bottom: 2.5px solid black;
 }
 
 .alinkabout {
@@ -72,8 +73,6 @@ ul.blalist {
 }
 .alinkabout:hover {
   color: blue;
-  font-size: 26px;
-  font-weight: bolder;
 }
 .footer li {
   font-size: 25px;
@@ -93,8 +92,8 @@ ul.blalist {
   position: absolute;
   padding-bottom: 0 auto;
   margin-bottom: 0 auto;
-  top: 3100px;
-  height: 250px;
+  top: 3500px;
+  height: 230px;
   width: 100%;
   border-top: 1.5px solid gray;
   background-color: rgb(23, 141, 102);
@@ -116,6 +115,7 @@ ul.blalist {
   margin-left: 25%;
   cursor: pointer;
 }
+
 /*THIS IS FOR SMALL DEVICES LIKE PHONESS TO TABLETS*/
 /*
 @media screen and (min-width: 320px) and (max-width: 720px) {

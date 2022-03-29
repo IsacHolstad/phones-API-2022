@@ -1,4 +1,4 @@
-const detailApi = "https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?";
+const detailApi = "https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48";
 console.log(detailApi);
 
 const phoneContainer = document.querySelector(".container");
@@ -15,6 +15,7 @@ async function detailContainer() {
         console.log(phoneS)
         for (let i = 0; i < phoneS.length; i++) {
             console.log(phoneS[i].phones)
+            
             phoneContainer.innerHTML += `<li>${phoneS[i].phones}</li>`
         }
 
