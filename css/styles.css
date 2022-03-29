@@ -59,9 +59,15 @@ ul.blalist {
   border-bottom: 1px solid black;
   width: 500px;
 }
-.footer li:hover {
+
+.alinkabout {
+  text-decoration: none;
+  color: black;
+}
+.alinkabout:hover {
   color: blue;
-  font-size: 27px;
+  font-size: 26px;
+  font-weight: bolder;
 }
 
 .footer {
