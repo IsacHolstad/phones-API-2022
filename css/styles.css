@@ -25,9 +25,10 @@ ul.blalist {
 .searchbar {
   border-radius: 10px;
   border: 1.5px solid gray;
-  height: 35px;
-  text-align: center;
-  width: 350px;
+  height: 32px;
+  text-align: left;
+  font-size: 15px;
+  width: 500px;
   margin-top: 10px;
 }
 .searchbar:hover {
@@ -49,14 +50,23 @@ ul.blalist {
   color: red;
   cursor: pointer;
 }
+.footer li {
+  font-size: 25px;
+  list-style: none;
+  margin: 15px;
+  cursor: pointer;
+}
+.footer li:hover {
+  color: blue;
+}
 
 .footer {
   position: absolute;
   padding-bottom: 0 auto;
   margin-bottom: 0 auto;
-  top: 3000px;
-  height: 300px;
+  top: 3100px;
+  height: 200px;
   width: 100%;
   border-top: 1px solid gray;
-  background: linear-gradient(rgb(3, 3, 3), rgb(41, 41, 41));
+  background: linear-gradient(rgb(48, 97, 153), rgb(30, 58, 134));
 }
