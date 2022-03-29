@@ -16,7 +16,7 @@ async function phoneNames() {
             if (i === 50) {
                 break
             }
-            containerWithPhones.innerHTML += `<li class="phonenamesli">${phoneData[i].brand_name}</li>`
+            containerWithPhones.innerHTML += `<li class="phonenamesli"><a href="phonedetails.html?id=$">${phoneData[i].brand_name}</a></li>`
         }
 
     }
