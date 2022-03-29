@@ -55,9 +55,11 @@ ul.blalist {
   list-style: none;
   margin: 15px;
   cursor: pointer;
+  font-variant-caps: all-petite-caps;
 }
 .footer li:hover {
   color: blue;
+  box-shadow: 0 0 50px black;
 }
 
 .footer {
