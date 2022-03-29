@@ -38,11 +38,11 @@ ul.blalist {
 }
 .searchbar {
   border-radius: 10px;
-  border: 1.5px solid gray;
+  border: 1.4px solid gray;
   height: 32px;
   text-align: left;
   font-size: 15px;
-  width: 500px;
+  width: 750px;
   margin-top: 10px;
 }
 .searchbar:hover {
@@ -65,17 +65,6 @@ ul.blalist {
   color: blue;
   cursor: pointer;
 }
-.footer li {
-  font-size: 25px;
-  list-style: none;
-  margin: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  cursor: pointer;
-  font-variant-caps: all-petite-caps;
-  border-bottom: 1px solid black;
-  width: 90%;
-}
 
 .alinkabout {
   text-decoration: none;
@@ -86,6 +75,18 @@ ul.blalist {
   font-size: 26px;
   font-weight: bolder;
 }
+.footer li {
+  font-size: 25px;
+  list-style: none;
+  margin: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  cursor: pointer;
+  font-variant-caps: all-petite-caps;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin-top: 10px;
+}
 
 .footer {
   text-align: left;
@@ -93,12 +94,31 @@ ul.blalist {
   padding-bottom: 0 auto;
   margin-bottom: 0 auto;
   top: 3100px;
-  height: 180px;
+  height: 250px;
   width: 100%;
   border-top: 1.5px solid gray;
   background-color: rgb(23, 141, 102);
 }
+.twitterlogo {
+  width: 35px;
+  margin-right: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.discordlogo {
+  width: 35px;
+  margin-right: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.githublogo {
+  width: 35px;
+  margin-right: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
 /*THIS IS FOR SMALL DEVICES LIKE PHONESS TO TABLETS*/
+/*
 @media screen and (min-width: 320px) and (max-width: 720px) {
   .searchbar {
     border-radius: 10px;
@@ -177,8 +197,10 @@ ul.blalist {
     background-color: rgb(23, 141, 102);
   }
 }
+*/
 
 /*THIS IS FOR SMALL LAPTOPTS TO HIGHT RESELUTION PC SCREENS*/
+/*
 @media screen and (min-width: 1024px) and (max-width: 2560px) {
   .searchbar {
     border-radius: 10px;
@@ -206,3 +228,4 @@ ul.blalist {
     font-variant-caps: all-petite-caps;
   }
 }
+*/
