@@ -13,7 +13,7 @@ async function phoneNames() {
         const phoneData = responseJSON.data;
         for (let i = 0; i < phoneData.length; i++) {
             //console.log(phoneData[i].brand_name)
-            if (i === 55) {
+            if (i === 50) {
                 break
             }
             containerWithPhones.innerHTML += `<li class="phonenamesli"><a href="phonedetails.html?id=$">${phoneData[i].brand_name}</a></li>`
