@@ -55,6 +55,9 @@ ul.blalist {
   flex-direction: column;
   font-variant-caps: all-petite-caps;
 }
+li:hover {
+  color: blue;
+}
 .phonenamesli:hover {
   color: blue;
   cursor: pointer;
