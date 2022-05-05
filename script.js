@@ -15,8 +15,8 @@ async function phoneNames() {
         const phoneData = responseJSON.data;
         //sconsole.log(phoneData)
         for (let i = 0; i < phoneData.length; i++) {
-            console.log(phoneData[i].brand_name)
-            if(i === 20) {
+           //console.log(phoneData[i].brand_name)
+            if(i === 100) {
                 break
             }
             

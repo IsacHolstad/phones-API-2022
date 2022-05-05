@@ -28,6 +28,11 @@ li{
   text-align: center;
   text-decoration: none;
   list-style-type: none;
+  margin: 5px;
+}
+li:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 ul.blalist {
   display: flex;
