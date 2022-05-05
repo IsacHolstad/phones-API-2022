@@ -8,7 +8,7 @@
   height: 50px;
   background-color: rgb(23, 141, 102);
   display: flex;
-  border-bottom: 1px solid gray;
+  margin-right: 5px;
 }
 .logo {
   width: 75px;
@@ -35,28 +35,6 @@ ul.blalist {
   font-size: 25px;
   font-variant-caps: all-petite-caps;
   cursor: pointer;
-}
-
-.searchbar {
-  border-radius: 50px;
-  border: 1px solid black;
-  height: 32px;
-  text-align: left;
-  font-size: 15px;
-  width: 800px;
-  margin-top: 10px;
-}
-.searchbar:hover {
-  border: 2px solid blue;
-}
-.searchbtn {
-  height: 32px;
-  margin-left: 15px;
-  border-radius: 50px;
-  border: 2px solid black;
-}
-.searchbtn:hover {
-  border: 2px solid blue;
 }
 .phonenamesli {
   top: 100px;
@@ -103,7 +81,7 @@ ul.blalist {
   padding-bottom: 0 auto;
   margin-bottom: 0 auto;
   top: 3500px;
-  height: 230px;
+  height: 180px;
   width: 100%;
   border-top: 1.5px solid gray;
   background-color: rgb(23, 141, 102);
@@ -129,24 +107,14 @@ ul.blalist {
 /*THIS IS FOR SMALL DEVICES LIKE PHONESS TO TABLETS*/
 
 @media screen and (min-width: 320px) and (max-width: 720px) {
-  .searchbar {
-    border-radius: 10px;
-    border: 1.4px solid gray;
-    height: 32px;
-    text-align: left;
-    font-size: 15px;
-    width: 300px;
-    margin-top: 10px;
-  }
+  
   .footer li {
     font-size: 25px;
     list-style: none;
     margin: 15px;
     border-bottom: 0;
-
     cursor: pointer;
     font-variant-caps: all-petite-caps;
-
     margin-top: 10px;
   }
 
