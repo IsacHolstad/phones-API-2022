@@ -24,6 +24,11 @@ a {
 a:hover {
   color: blue;
 }
+li{
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
 ul.blalist {
   display: flex;
   width: 260px;

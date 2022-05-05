@@ -1,4 +1,4 @@
-const myApi = "http://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48";
+const myApi = "https://api-mobilespecs.azharimm.site/v2/brands";
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + myApi;
 console.log(myApi);
@@ -11,12 +11,16 @@ async function phoneNames() {
         const response = await fetch(corsFixUrl);
         console.log(response);
         const responseJSON = await response.json();
-        //console.log(responseJSON);
+        console.log(responseJSON);
         const phoneData = responseJSON.data;
+        //sconsole.log(phoneData)
         for (let i = 0; i < phoneData.length; i++) {
-            console.log(phoneData[i])
+            console.log(phoneData[i].brand_name)
+            if(i === 20) {
+                break
+            }
             
-            containerWithPhones.innerHTML += `<li>${phoneData[i]}</li>`
+            containerWithPhones.innerHTML += `<li>${phoneData[i].brand_name}</li>`
         }
 
     }
