@@ -1,5 +1,5 @@
 const queryString = document.location.search;
-const detailApi = `http://api-mobilespecs.azharimm.site/v2/brands/{br}`;
+const detailApi = `https://api-mobilespecs.azharimm.site/v2/brands/{brand_slug}/{phone_slug}`;
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + detailApi;
 console.log(detailApi);
