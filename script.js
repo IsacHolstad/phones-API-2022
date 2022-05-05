@@ -1,4 +1,6 @@
-const myApi = "https://api-mobilespecs.azharimm.site/v2/brands";
+const myApi = "http://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48";
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFixUrl = proxy + myApi;
 console.log(myApi);
 
 const containerWithPhones = document.querySelector(".container");
@@ -6,18 +8,15 @@ const containerWithPhones = document.querySelector(".container");
 
 async function phoneNames() {
     try{
-        const response = await fetch(myApi);
+        const response = await fetch(corsFixUrl);
         console.log(response);
         const responseJSON = await response.json();
-        console.log(responseJSON);
+        //console.log(responseJSON);
         const phoneData = responseJSON.data;
         for (let i = 0; i < phoneData.length; i++) {
-            //console.log(phoneData[i].brand_name)
-            if (i === 20) {
-                break
-            }
-            containerWithPhones.innerHTML += `<li class="phonenamesli">
-            <a href="phonedetails.html?id=$">${phoneData[i].brand_name}</a></li>`
+            console.log(phoneData[i])
+            
+            containerWithPhones.innerHTML += `<li>${phoneData[i]}</li>`
         }
 
     }
@@ -29,6 +28,5 @@ phoneNames()
 
 
 //add filter by search to searchbox in navigation top header
-const searchBar = document.querySelector(".searchbar");
-console.log(searchBar);
+
 
