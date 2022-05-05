@@ -1,13 +1,15 @@
-const detailApi = "https://api-mobilespecs.azharimm.site/v2/brands";
+const queryString = document.location.search;
+const detailApi = `https://api-mobilespecs.azharimm.site//v2/brands/{brand_slug}`;
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFixUrl = proxy + detailApi;
 console.log(detailApi);
 
 const phoneContainer = document.querySelector(".container");
 
-console.log(phoneContainer);
 
 async function detailContainer() {
     try {
-        const response = await fetch(detailApi);
+        const response = await fetch(corsFixUrl);
         console.log(response);
         const responseJSON = await response.json(); // convert the response to json data
         console.log(responseJSON)
@@ -19,12 +21,12 @@ async function detailContainer() {
                 break
             }
             
-            phoneContainer.innerHTML += `<li class="detailslistHT">${phoneS[i].brand_slug} ${phoneS[i].brand_name}</li>`
+            phoneContainer.innerHTML += `<li class="detailslistHT">${phoneS[i].brand_slug}</li>`
         }
 
     }catch(error) {
-        phoneContainer.innerHTML += `<h1>there is an major error happening<h1>`
+        phoneContainer.innerHTML += `<h1> error happening<h1>`
         
     }
 }
-detailContainer()
+detailContainer();
