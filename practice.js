@@ -40,3 +40,5 @@ function sum(x) {
 console.log("answear to question 1:", sum(3)); // 3
 console.log("answear to question 2:", sum(5)); // 8
 console.log("answear to question 3:", sum(228)); // 236
+
+console.log(Math.PI)
