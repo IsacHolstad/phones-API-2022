@@ -15,16 +15,12 @@ async function detailContainer() {
         console.log(responseJSON)
         const phoneS = responseJSON.data;
         console.log(phoneS)
-       
-            if(i === 50) {
-                break
-            }
             
             phoneContainer.innerHTML += `<li><a href="${phoneS[i].brand_slug}</li>`
         
 
     }catch(error) {
-        phoneContainer.innerHTML += `<h1> error happening<h1>`
+        phoneContainer.innerHTML += `<h1>404<h1>`
         
     }
 }
