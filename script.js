@@ -13,14 +13,12 @@ async function phoneNames() {
         const responseJSON = await response.json();
         console.log(responseJSON);
         const phoneData = responseJSON.data;
-        //sconsole.log(phoneData)
         for (let i = 0; i < phoneData.length; i++) {
-           //console.log(phoneData[i].brand_name)
             if(i === 100) {
                 break
             }
             
-            containerWithPhones.innerHTML += `<li>${phoneData[i].brand_name}</li>`
+            containerWithPhones.innerHTML += `<li><a href="detail.html?id=${phoneData[i].brand_id}">${phoneData[i].brand_name}</li>`
         }
 
     }
