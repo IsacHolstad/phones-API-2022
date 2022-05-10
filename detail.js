@@ -1,8 +1,12 @@
 const queryString = document.location.search;
-const detailApi = `https://api-mobilespecs.azharimm.site/v2/brands/{brand_slug}/{phone_slug}`;
+const params = new URLSearchParams(queryString);
+const brand_id = params.get('brand_id')
+
+
+const detailApi = `https://api-mobilespecs.azharimm.site/v2/brands/${brand_id}`;
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + detailApi;
-console.log(detailApi);
+
 
 const phoneContainer = document.querySelector(".container");
 
@@ -10,13 +14,11 @@ const phoneContainer = document.querySelector(".container");
 async function detailContainer() {
     try {
         const response = await fetch(corsFixUrl);
-        console.log(response);
-        const responseJSON = await response.json(); // convert the response to json data
-        console.log(responseJSON)
-        const phoneS = responseJSON.data;
-        console.log(phoneS)
+        //console.log(response);
+        const phoneS = await response.json(); // convert the response to json dat
+        //console.log(phoneS)
             
-            phoneContainer.innerHTML += `<li><a href="${phoneS[i].brand_slug}</li>`
+            phoneContainer.innerHTML = `<li>${phoneS[i].brand_name}</li>`
         
 
     }catch(error) {
